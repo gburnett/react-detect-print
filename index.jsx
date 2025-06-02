@@ -12,7 +12,7 @@ const useDetectPrint = () => {
       window.removeEventListener("beforeprint", handleBeforeprint);
       window.removeEventListener("afterprint", handleAfterprint);
     };
-  });
+  }, []);
 
   return isPrinting;
 };
